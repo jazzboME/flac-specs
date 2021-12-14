@@ -27,7 +27,7 @@ func examine(files []string, detail bool) (string, error) {
 			if !detail {
 				sumTotal[summary{s.BitsPerSample, s.SampleRate, s.NChannels}] = sumTotal[summary{s.BitsPerSample, s.SampleRate, s.NChannels}] + 1
 			} else {
-				result += fmt.Sprintf("%s: %v bits/%v khz/%v channels\n", filepath.Base(r), s.BitsPerSample, s.SampleRate, s.NChannels)
+				result += fmt.Sprintf("%s: %v bits/%v kHz/%v channels\n", filepath.Base(r), s.BitsPerSample, s.SampleRate, s.NChannels)
 			}
 		}
 
@@ -47,7 +47,7 @@ func examine(files []string, detail bool) (string, error) {
 			} else {
 				result += "s are"
 			}
-			result += fmt.Sprintf(" %v bits/%v khz/%v channels.\n", spec.bits, spec.rate, spec.channels)
+			result += fmt.Sprintf(" %v bits/%v kHz/%v channels.\n", spec.bits, spec.rate, spec.channels)
 		}
 	}
 

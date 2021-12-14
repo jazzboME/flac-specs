@@ -1,4 +1,4 @@
-module git-hub.com/jazzboME/flac-specs
+module github.com/jazzboME/flac-specs
 
 go 1.16
 

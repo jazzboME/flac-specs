@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"path/filepath"
 	"github.com/mewkiz/flac"
+	"path/filepath"
 )
 
 type summary struct {
-	bits uint8
-	rate uint32
+	bits     uint8
+	rate     uint32
 	channels uint8
 }
 
@@ -50,6 +50,6 @@ func examine(files []string, detail bool) (string, error) {
 			result += fmt.Sprintf(" %v bits/%v khz/%v channels.\n", spec.bits, spec.rate, spec.channels)
 		}
 	}
-	
+
 	return result, err
 }

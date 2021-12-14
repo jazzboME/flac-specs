@@ -20,9 +20,9 @@ func main() {
 	}
 
 	result, err := examine(files, *boolPtr)
-	
+
 	fmt.Print(result)
-	if err!= nil {
+	if err != nil {
 		fmt.Printf("Error: %v", err)
 	}
 }
